@@ -1,0 +1,96 @@
+/* (IF YOU WANT TO CENTER SOMETHING LIKE A BUTTON) Remember that if an element is display:block - you need to give margin: 0 auto to said element. If the element is inline-block you need to give text-align center to the parent element */
+/* Splide is a lightweight, powerful and flexible slider and carousel, written in pure JavaScript without any dependencies. https://splidejs.com/ */
+
+/* Great page to generate CSS buttons https://www.sanwebe.com/css3-button-generator */
+
+/* SPLIDE */
+
+/* GENERAL  */
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: #f6b93b;
+  height: 500vh;
+}
+.centerText {
+  text-align: center;
+}
+
+/*  POP-UP MODAL WINDOW  */
+.modal {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
+#popUp-ModalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 80%;
+  padding: 20px;
+}
+#popUp-Modal-Paragraph {
+  margin: 20px 100px 20px 100px;
+}
+
+/*   POP-UP MODAL WINDOW BUTTON   */
+#popUp-ModalButton-Div {
+  padding: 10px 0 0 0;
+}
+#popUp-ModalButton {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+#popUp-ModalButton:hover {
+  cursor: pointer;
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+}
+
+/* POP-UP MODAL CLOSING ANIMATION  */
+@-webkit-keyframes animateBottom {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: 300px;
+    opacity: 0;
+  }
+}
+.modal-content-active {
+  animation-name: animateBottom;
+  animation-duration: 0.4s;
+}
+
+/* NAVBAR  */

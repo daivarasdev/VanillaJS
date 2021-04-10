@@ -1,4 +1,8 @@
 "use strict";
+// INITIALIZING SPLIDE
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide").mount();
+});
 
 // Pop-Up Modal
 const modal = document.getElementById("popUp-Modal");

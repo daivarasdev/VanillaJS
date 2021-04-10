@@ -15,6 +15,7 @@
 body {
   background-color: #f6b93b;
   height: 500vh;
+  padding-top: 56px;
 }
 .centerText {
   text-align: center;
@@ -94,3 +95,15 @@ body {
 }
 
 /* NAVBAR  */
+#navbarSupportedContent {
+  margin-left: -140px;
+}
+
+/* CARD */
+.card {
+  margin: 60px auto;
+  width: 1000px;
+}
+.card-header {
+  text-align: center;
+}

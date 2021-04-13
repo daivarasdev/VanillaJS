@@ -1,5 +1,15 @@
 "use strict";
 
+// new Glide(".glide").mount();
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 2,
+  draggable: true,
+  arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next",
+  },
+  dots: ".dots",
+});
 // Pop-Up Modal
 const modal = document.getElementById("popUp-Modal");
 // Get the button element that closes the modal

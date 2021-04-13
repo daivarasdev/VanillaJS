@@ -13,7 +13,7 @@
   font-family: "Lato", sans-serif;
 }
 body {
-  background-color: #f6b93b;
+  background-color: #25274d;
   height: 500vh;
   padding-top: 56px;
 }
@@ -106,4 +106,29 @@ body {
 }
 .card-header {
   text-align: center;
+  background-color: black;
+  color: white;
+}
+
+/* BODY */
+.technologiesSection {
+  background-color: #aaabb8;
+}
+.technologiesText {
+  padding: 20px 0 10px 0;
+}
+.flexContainer {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.flexItem {
+  margin: 20px;
+}
+
+.flexImage {
+  max-width: 90%;
+  max-height: 90%;
 }
